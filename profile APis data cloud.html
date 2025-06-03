@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    
+    <link rel="icon" type="image/png" href="data:image/jpeg;base64,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">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Adjust width for better spacing in two columns */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Adjust width for proper spacing */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+  </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Login Form -->
+        <div id="loginFormContainer">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <button id="registerButton">Register</button>
+        </div>
+
+        <!-- Registration Form -->
+        <div id="registrationFormContainer" style="display:none;">
+            <h1>Personal Information Form</h1>
+            <form id="piForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation">Occupation:</label>
+                        <input type="text" id="occupation" name="occupation" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nationality">Nationality:</label>
+                        <input type="text" id="nationality" name="nationality" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profilePicture">Profile Picture (JPEG only):</label>
+                        <input type="file" id="profilePicture" name="profilePicture" accept="image/jpeg" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="button" id="backButton">Back</button>
+                    <button type="submit">Submit</button>
+                    
+                </div>
+            </form>
+        </div>
+
+        <!-- Display User Information -->
+        <div id="userInfoContainer" style="display:none;">
+            <h1>User Information</h1>
+            <div id="userInfo"></div>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const loginFormContainer = document.getElementById('loginFormContainer');
+    const registrationFormContainer = document.getElementById('registrationFormContainer');
+    const userInfoContainer = document.getElementById('userInfoContainer');
+    const registerButton = document.getElementById('registerButton');
+    const loginForm = document.getElementById('loginForm');
+    const piForm = document.getElementById('piForm');
+    const backButton = document.getElementById('backButton');
+    const logoutButton = document.getElementById('logoutButton');
+    const userInfo = document.getElementById('userInfo');
+
+    registerButton.addEventListener('click', function() {
+        loginFormContainer.style.display = 'none';
+        registrationFormContainer.style.display = 'block';
+    });
+
+    backButton.addEventListener('click', function() {
+        registrationFormContainer.style.display = 'none';
+        loginFormContainer.style.display = 'block';
+    });
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('loginEmail').value;
+        const storedUserData = JSON.parse(localStorage.getItem('userData'));
+        if (storedUserData && storedUserData.email === email) {
+            loginFormContainer.style.display = 'none';
+            userInfoContainer.style.display = 'block';
+            displayUserInfo(storedUserData);
+        } else {
+            alert('No user found with this email. Please register.');
+        }
+    });
+
+    piForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const address = document.getElementById('address').value;
+        const dob = document.getElementById('dob').value;
+        const gender = document.getElementById('gender').value;
+        const occupation = document.getElementById('occupation').value;
+        const nationality = document.getElementById('nationality').value;
+        const profilePicture = document.getElementById('profilePicture').files[0];
+
+        // Validate profile picture type
+        if (profilePicture && profilePicture.type !== 'image/jpeg') {
+            alert('Please upload a JPEG image.');
+            return;
+        }
+
+        // Create an object to store the data
+        const userData = {
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            phone: phone,
+            address: address,
+            dob: dob,
+            gender: gender,
+            occupation: occupation,
+            nationality: nationality,
+            profilePicture: profilePicture ? URL.createObjectURL(profilePicture) : null
+        };
+
+        // Save the data to local storage
+        localStorage.setItem('userData', JSON.stringify(userData));
+        
+        const url = "https://ae1709725408312.my.salesforce.com/services/oauth2/token";
+
+                const requestOptions = {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: new URLSearchParams({
+                        "grant_type": "client_credentials",
+                        "client_id": "3MVG9jSKmPAPVo2JJ106tjUnx2RDd1ioHJvwF_AsO83SOvOHs12FqX5gh3FzFlnznPxkFoRWewA.G8Ndv.XMN",
+                        "client_secret": "27E5D743D4864F1E4009D6617DC2F7FE4A858CD7F1EE2612D5062F14BF6EE99B"
+                    }),
+                    redirect: "follow"
+                };
+
+                fetch(url, requestOptions)
+                    .then(response => response.json())
+                    .then(result => {
+                        //console.log(result);
+                        const accessToken = result.access_token;
+                        console.log(accessToken);
+                        // Perform the second API call using the obtained access token
+                        const secondUrl = 'https://ae1709725408312.my.salesforce.com/services/a360/token';
+                        console.log(accessToken);
+                        const secondRequestOptions = {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded'
+                            },
+                            body: new URLSearchParams({
+                                'grant_type': 'urn:salesforce:grant-type:external:cdp',
+                                'subject_token': accessToken,
+                                'subject_token_type': 'urn:ietf:params:oauth:token-type:access_token'
+                            }),
+                            redirect: 'follow'
+                        };
+
+                        fetch(secondUrl, secondRequestOptions)
+                            .then(secondResponse => secondResponse.json())
+                            .then(secondResult => {
+                                console.log(secondResult);
+                                const SECONDaccessToken = secondResult.access_token;
+                                // Handle the second access token here
+                            })
+                            .catch(secondError => console.error('Second API call error:', secondError));
+                    })
+                    .catch(error => console.error('Error:', error));
+
+
+
+        // Display login form
+        registrationFormContainer.style.display = 'none';
+        loginFormContainer.style.display = 'block';
+        alert('Personal information saved successfully!');
+    });
+
+    logoutButton.addEventListener('click', function() {
+        userInfoContainer.style.display = 'none';
+        loginFormContainer.style.display = 'block';
+        localStorage.removeItem('userData');
+    });
+
+    function displayUserInfo(userData) {
+        userInfo.innerHTML = `
+            <p><strong>First Name:</strong> ${userData.firstName}</p>
+            <p><strong>Last Name:</strong> ${userData.lastName}</p>
+            <p><strong>Email:</strong> ${userData.email}</p>
+            <p><strong>Phone Number:</strong> ${userData.phone}</p>
+            <p><strong>Address:</strong> ${userData.address}</p>
+            <p><strong>Date of Birth:</strong> ${userData.dob}</p>
+            <p><strong>Gender:</strong> ${userData.gender}</p>
+            <p><strong>Occupation:</strong> ${userData.occupation}</p>
+            <p><strong>Nationality:</strong> ${userData.nationality}</p>
+            ${userData.profilePicture ? `<p><strong>Profile Picture:</strong><br><img src="${userData.profilePicture}" alt="Profile Picture" width="100"></p>` : ''}
+        `;
+    }
+});
+
+  </script>
+</body>
+</html>
